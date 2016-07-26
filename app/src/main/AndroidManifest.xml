@@ -18,6 +18,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".CommunityActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            ></activity>
+        <activity
+            android:name=".PlanningActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            ></activity>
+        <activity
+            android:name=".TravelingActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            ></activity>
+        <activity
+            android:name=".ModificationActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            ></activity>
     </application>
 
 </manifest>

@@ -1,5 +1,6 @@
 package com.example.appcreate48.gotogether_2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -43,34 +44,26 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        if (id == R.id.planning) {
+            Intent intent = new Intent(getApplicationContext(),PlanningActivity.class);
+            startActivity(intent);
+        } else if (id == R.id.traveling) {
+            Intent intent = new Intent(getApplicationContext(),TravelingActivity.class);
+            startActivity(intent);
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.community) {
+            Intent intent = new Intent(getApplicationContext(),CommunityActivity.class);
+            startActivity(intent);
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.modification) {
+            Intent intent = new Intent(getApplicationContext(),ModificationActivity.class);
+            startActivity(intent);
 
         }
 
